@@ -1,0 +1,47 @@
+$base-font-size: 10px;
+$base-letter-spacing: -0.02em;
+
+html {
+	font-size: $base-font-size;
+	height: 100%;
+	min-height: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	width: 100%;
+}
+
+body {
+	font-size: $base-font-size;
+	font-family: $font-family;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	min-height: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	width: 100%;
+	font-weight: normal;
+	letter-spacing: $base-letter-spacing;
+	background: $white;
+	color: $black;
+	position: relative;
+}
+
+/** Scroll bar **/
+html::-webkit-scrollbar-button,
+html::-webkit-scrollbar-track-piece,
+html::-webkit-scrollbar-corner {
+	display: none;
+}
+
+html::-webkit-scrollbar,
+html::-webkit-scrollbar-track {
+	width: 4px;
+	height: 4px;
+}
+
+html::-webkit-scrollbar-thumb {
+	background-color: $black;
+}
