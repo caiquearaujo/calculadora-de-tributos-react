@@ -1,0 +1,37 @@
+{
+	"stylelint.autoFixOnSave": true,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+	},
+	"[css]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.stylelint": true
+		}
+	},
+	"[scss]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.stylelint": true
+		}
+	},
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"stylelint.validate": ["css", "scss"]
+}

@@ -1,0 +1,32 @@
+{
+	"extends": "stylelint-config-standard-scss",
+	"plugins": ["stylelint-prettier"],
+	"rules": {
+		"scss/at-import-no-partial-leading-underscore": null,
+		"block-closing-brace-empty-line-before": "never",
+		"block-closing-brace-newline-after": "always",
+		"block-closing-brace-newline-before": "always",
+		"block-opening-brace-newline-after": "always",
+		"block-opening-brace-newline-before": "always-single-line",
+		"indentation": "tab",
+		"prettier/prettier": [
+			true,
+			{
+				"printWidth": 75,
+				"tabWidth": 3,
+				"useTabs": true,
+				"semi": true,
+				"singleQuote": false,
+				"bracketSpacing": false,
+				"bracketSameLine": false,
+				"arrowParens": "avoid"
+			}
+		]
+	},
+	"overrides": [
+		{
+			"files": ["**/*.scss"],
+			"customSyntax": "postcss-scss"
+		}
+	]
+}
