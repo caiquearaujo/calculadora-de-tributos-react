@@ -1,0 +1,36 @@
+fieldset {
+	display: flex;
+	flex-flow: column nowrap;
+	margin-bottom: 16px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	label {
+		font-size: 1.5rem;
+		font-weight: bold;
+		margin-bottom: 6px;
+	}
+}
+
+input {
+	font-family: $base-font-size;
+	font-size: 1.8rem;
+	margin: 0;
+	padding: 8px;
+	border: 1px solid rgb(200 209 225);
+	appearance: none;
+	overflow: hidden;
+	outline: none;
+
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		appearance: none;
+		margin: 0;
+	}
+
+	&:focus {
+		border-color: rgb(0 0 0 / 50%);
+	}
+}
