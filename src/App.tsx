@@ -1,9 +1,10 @@
 import React from 'react';
+import ProLaborPage from './app/pages/ProLaborPage';
 
 function App() {
 	return (
 		<div className="App">
-			<h1>Hello, world!</h1>
+			<ProLaborPage />
 		</div>
 	);
 }

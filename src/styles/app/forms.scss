@@ -14,7 +14,9 @@ fieldset {
 	}
 }
 
-input {
+input,
+textarea,
+select {
 	font-family: $base-font-size;
 	font-size: 1.8rem;
 	margin: 0;
@@ -23,14 +25,26 @@ input {
 	appearance: none;
 	overflow: hidden;
 	outline: none;
+	border-radius: 3px;
+
+	&:focus {
+		border-color: rgb(0 0 0 / 50%);
+	}
+}
+
+input,
+textarea {
+	&:read-only {
+		background-color: #f3f3f3;
+	}
 
 	&::-webkit-outer-spin-button,
 	&::-webkit-inner-spin-button {
 		appearance: none;
 		margin: 0;
 	}
+}
 
-	&:focus {
-		border-color: rgb(0 0 0 / 50%);
-	}
+input.currency-input {
+	text-align: right;
 }

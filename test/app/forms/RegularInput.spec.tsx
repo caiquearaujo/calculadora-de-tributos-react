@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import RegularInput from '@root/app/forms/RegularInput';
+import RegularInput from '@root/app/forms/CurrencyInput';
 
 describe('forms > RegularInput', () => {
 	it('should display component', () => {

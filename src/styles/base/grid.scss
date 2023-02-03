@@ -1,0 +1,46 @@
+$device-xs: 540px;
+$device-sm: 768px;
+$device-md: 992px;
+$device-lg: 1200px;
+
+.flex-row {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+@for $i from 1 through 6 {
+	.flex-col-xs-#{$i},
+	.flex-col-sm-#{$i},
+	.flex-col-md-#{$i},
+	.flex-col-lg-#{$i} {
+		box-sizing: border-box;
+		padding: 1em;
+		width: 100%;
+	}
+
+	.flex-col-xs-#{$i} {
+		@media (min-width: $device-xs) {
+			width: calc(100% * (#{$i} / 6));
+		}
+	}
+
+	.flex-col-sm-#{$i} {
+		@media (min-width: $device-sm) {
+			width: calc(100% * (#{$i} / 6));
+		}
+	}
+
+	.flex-col-md-#{$i} {
+		@media (min-width: $device-md) {
+			width: calc(100% * (#{$i} / 6));
+		}
+	}
+
+	.flex-col-lg-#{$i} {
+		@media (min-width: $device-lg) {
+			width: calc(100% * (#{$i} / 6));
+		}
+	}
+}
