@@ -1,15 +1,17 @@
 import data from '@root/app/data';
 
 const darfCalculation = (income: number, taxes = 0): [number, number] => {
+	const finalIncome = income - taxes;
+
 	const f = data.darfTable.find(
-		item => income >= item.min && income <= item.max
+		item => finalIncome >= item.min && finalIncome <= item.max
 	);
 
 	if (!f) {
 		return [0, 0];
 	}
 
-	return [(income - taxes) * f.aliquot - f.deduction, f.aliquot];
+	return [finalIncome * f.aliquot - f.deduction, f.aliquot];
 };
 
 const formatAsHundredth = (val: string): number => {
