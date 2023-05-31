@@ -30,10 +30,7 @@ select {
 	&:focus {
 		border-color: rgb(0 0 0 / 50%);
 	}
-}
 
-input,
-textarea {
 	&:read-only {
 		background-color: #f3f3f3;
 	}
@@ -45,6 +42,7 @@ textarea {
 	}
 }
 
-input.currency-input {
+input.currency-input,
+input.percent-input {
 	text-align: right;
 }

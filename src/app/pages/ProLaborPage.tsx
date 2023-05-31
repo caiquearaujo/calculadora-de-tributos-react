@@ -70,7 +70,7 @@ const ProLaborPage: React.FC = () => {
 	}, [proLabor, updateTaxes]);
 
 	return (
-		<main className="wrapper">
+		<div className="wrapper">
 			<h2>Calculadora de Pró-labore Líquido</h2>
 			<div className="flex-row">
 				<div className="flex-col-lg-3">
@@ -132,7 +132,7 @@ const ProLaborPage: React.FC = () => {
 					/>
 				</div>
 			</div>
-		</main>
+		</div>
 	);
 };
 

@@ -58,14 +58,14 @@ const CurrencyInput: React.FC<CurrencyInputProps> = props => {
 		switch (key) {
 			case 'ArrowUp':
 				callback({
-					number: number + 0.01,
-					string: utils.formatAsPrice(number + 0.01),
+					number: number + step,
+					string: utils.formatAsPrice(number + step),
 				});
 				break;
 			case 'ArrowDown':
 				callback({
-					number: number - 0.01,
-					string: utils.formatAsPrice(number - 0.01),
+					number: number - step,
+					string: utils.formatAsPrice(number - step),
 				});
 				break;
 			default:
